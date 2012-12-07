@@ -1,0 +1,26 @@
+Ms. Anna Souchuk;2032 N. Point St.;Chicago, IL 60647
+The Kojak Family;2S081 Ivy Lane;Lombard, IL 60148
+Mr. Justin Storbeck;Someplace;Brooklyn, NY
+Ms. Amanda Orfei;906 Ridge Sq, Unit 307;Elk Grove Village, IL 60007
+
+Mr. Cameron Holman;P.O. Box 72453;Fort Bragg, NC 28310
+Holliday & Weber;Lutz; West Lafayette, IN 47906
+Ms. Sara Underwood;1880 Ellison Drive; West Lafayette, IN 47906
+Ms. Laura Paulsen;400 N. River Rd, Apt 107; West Lafayette, IN 47906
+Mr. & Mrs. Pomeroy;108 Mesquite Ct.; Folsom, CA 95630
+Mr. Eric Brandner;3410 Cheswick Ct., Apt 7; West Lafayette, IN 47906 
+Mr. Alex Engels;Birch Lane; Hohokus, Dirty Jersey 
+Mr. Blake Williams and Ms. Alexandra Cosgrove;Talbot Street; Indianapolis, IN 
+Mr. & Mrs. Brush; Boston, 
+Ms. Destiny Baccino; Somewher; SNHU; NH
+
+The Klosterman Family;6920 Sturgeon; Ben Avon, PA 
+The Klosterman Family;SomePlace; Katy, TX
+
+#this is a comment, would need to run separately if do add'l line for addresses with apt number.
+Dr. Theolyn Price;3621 Ethan Lane; Orlando, FL 32814
+The Reeve Family;1420 Berkman Court; Rochester, MN 55901
+Mr. Justin Roesner;4413 W. Valhalla Blvd, Apt 11;Sioux Falls, SD 57106
+Mr. & Mrs. Peterson; Somewhere; Mantorville, MN 55
+
+
