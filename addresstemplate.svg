@@ -9,12 +9,12 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="744.09448819"
-   height="1052.3622047"
+   width="855"
+   height="371.25"
    id="svg2"
    version="1.1"
-   inkscape:version="0.48.3.1 r9886"
-   sodipodi:docname="New document 1">
+   inkscape:version="0.48.2 r9819"
+   sodipodi:docname="addresstemplate.svg">
   <defs
      id="defs4" />
   <sodipodi:namedview
@@ -25,12 +25,12 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.35"
-     inkscape:cx="375"
+     inkscape:cx="477.39738"
      inkscape:cy="520"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
-     inkscape:window-width="561"
+     inkscape:window-width="613"
      inkscape:window-height="573"
      inkscape:window-x="0"
      inkscape:window-y="0"
@@ -43,36 +43,56 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
   <g
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
-     id="layer1">
+     id="layer1"
+     transform="translate(0,-681.11219)">
     <text
        xml:space="preserve"
        style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:-2.72000003px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Church Text;-inkscape-font-specification:Church Text"
-       x="262.3266"
-       y="163.79076"
+       x="427.50977"
+       y="731.31726"
        id="text2985"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          id="tspan2987"
-         x="260.96661"
-         y="163.79076">TEXT</tspan><tspan
+         x="426.14978"
+         y="731.31726"
+         style="-inkscape-font-specification:eufm10;font-family:eufm10;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal">TEXT</tspan><tspan
          sodipodi:role="line"
-         x="260.96658"
-         y="213.79076"
-         id="tspan2989">TEXT</tspan><tspan
+         x="426.14978"
+         y="781.31726"
+         id="tspan2989"
+         style="-inkscape-font-specification:eufm10;font-family:eufm10;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal">TEXT</tspan><tspan
          sodipodi:role="line"
-         x="260.96661"
-         y="263.79077"
-         id="tspan2991">TEXT</tspan><tspan
+         x="426.14978"
+         y="831.31726"
+         id="tspan2991"
+         style="-inkscape-font-specification:eufm10;font-family:eufm10;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal">TEXT</tspan><tspan
          sodipodi:role="line"
-         x="260.96661"
-         y="313.79077"
-         id="tspan2993">TEXT</tspan></text>
+         x="427.50977"
+         y="881.31726"
+         id="tspan3060"
+         style="-inkscape-font-specification:eufm10;font-family:eufm10;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal" /><tspan
+         sodipodi:role="line"
+         x="426.14978"
+         y="931.31726"
+         id="tspan2993"
+         style="-inkscape-font-specification:eufm10;font-family:eufm10;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal">TEXT</tspan><tspan
+         sodipodi:role="line"
+         x="426.14978"
+         y="981.31726"
+         id="tspan3062"
+         style="-inkscape-font-specification:eufm10;font-family:eufm10;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal">TEXT</tspan><tspan
+         sodipodi:role="line"
+         x="426.14978"
+         y="1031.3173"
+         id="tspan3073"
+         style="-inkscape-font-specification:eufm10;font-family:eufm10;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal">TEXT</tspan></text>
   </g>
 </svg>

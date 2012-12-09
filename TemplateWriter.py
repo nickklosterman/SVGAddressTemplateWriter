@@ -18,8 +18,10 @@ class SVGTemplateWriter:
         self.keyword=keyword
         self.addressList=[] #init all veriables before you try to use them....I had this declared after ExtractAddressList which uses it and so there was complaining that the class didn't have a self.addressList attribute
         self.templateList=[]
-        self.incrementCounter=0    
+        self.incrementCounter=0  
+        self.templateListSlots=0  
         self.ExtractAddressList()
+        self.addressListSlots=len(self.addressList[0])#get number of fields in an address, assume first item is representative
         #self.Temp()
         self.CompressList() #this is so later on we can use the simple lazy way to move through the list
 #        self.CyclicSearchReplace() # this was for a less efficient method where I would repeatedly loop through reading the template file and outputting code adn doing a search/replae on text that I needed to output.
@@ -28,27 +30,74 @@ class SVGTemplateWriter:
         self.ChunkAddressListForTemplate()
 
     def ChunkAddressListForTemplate(self):
-        self.addressList.reverse # so we can pop from 'front' ....don't need to use this if not using pop and append
+ #       print(self.addressList)
+        self.addressList.reverse() # so we can pop from 'front' ....don't need to use this if not using pop and append
+ #       print(self.addressList)
+ #       self.addressList.pop()
+#        print(self.addressList)
+  #      print(self.addressList.pop())
         while len(self.addressList)>0:
-            temp=[]
-            for i in range(len(self.templateList)):
-                temp.append(self.addressList.pop)
-            self.OutputTemplateFile(temp)
-            
+            addresssublist=[]
+            for i in range((self.templateListSlots)):
+                addresssublist.append(self.addressList.pop())
+            print(addresssublist) 
+            #self.OutputTemplateFile(temp)
+            fileoutput=self.MergeListsForOutput(addresssublist)
+            self.SaveToFile(fileoutput,addresssublist)
+    def TranslateSpecialCharacters(self,text): 
+        translation = {"&":"&amp;"}  #add things to list
+        for v,k in translation.items():
+            text=text.replace(v,k)
+        return text
+
+#merge the two lists for output
+    def MergeListsForOutput(self,addresslist): #addresslist is a subset of the total addresslist that will fit in one template file
+        output=self.templateList #make copy so can reuse the template, fill in blanks with fields from our addresslist.
+        counter=1
+        for item in addresslist:
+            output[counter]=self.TranslateSpecialCharacters(item)
+            counter+=2
+        output_=''
+        print(*output)
+        #this seems incredibly inefficient but I can't seem to find an easier way. I feel like there must be but can't figure it out.
+        for item in output:
+            output_+=item
+
+        return(output_)
+
+    def CreateFileName(self,addresssublist): #createfilename from addresssublist, use first fields(name) strung together so knw contents based on filename
+        output=''
+        for i in range(len(addresssublist)): #since we compressed the list here we loop to get filename of first field of eaach addresss.
+            if i % self.addressListSlots ==0:
+                output+=addresssublist[i]
+        output=output.translate(' .&') #delete unnecessary characters to make filename more compatible
+        output+='.svg'
+        return output
+    def SaveToFile(self,output,addresssublist): #output is the file contents we will write to file
+        filename=self.CreateFileName(addresssublist)
+        print("writing to %s" % filename)
+        print(output)
+        f=open(filename,'w')
+        f.write(str(output))
+        f.close()
+    
     def OutputTemplateFile(self,addresslist):
         tempTemplate=self.templateList#.reverse
-        tempTemplate.reverse
+        tempTemplate.reverse() # .reverse and .reverse() are NOT the same thing at all.....ugh tough one to learn
+#        print(tempTemplate)
         output=""
         counter=0
+#        print(str(tempTemplate.pop))
 # something here is broke.....:(
-#         while len(tempTemplate)>0 or len(addresslist)>0:
-#             if len(tempTemplate)>0:
-#                 output+=str(tempTemplate.pop)
-#             if len(addresslist)>0:
-#                 output+=str(addresslist.pop)
-#             counter+=1
-#             if counter>10:
-#                 break
+        while len(tempTemplate)>0 or len(addresslist)>0:
+            print("counter %d" % counter)
+            if len(tempTemplate)>0:
+                output+=str(tempTemplate.pop())
+            if len(addresslist)>0:
+                output+=str(addresslist.pop())
+            counter+=1
+            if counter>10:
+                break
         print(output)
 
     def WriteOutput(self):
@@ -99,6 +148,8 @@ class SVGTemplateWriter:
                 firstHalf,secondHalf=line.split(self.keyword) #this assumes there is only one occurrence of the keyword per line
                 tempoutput+=firstHalf
                 self.templateList.append(tempoutput)
+                self.templateList.append('') # add a blank place holder where the address will go
+                self.templateListSlots+=1
                 tempoutput=secondHalf
             else:
                 tempoutput+=line
@@ -107,7 +158,7 @@ class SVGTemplateWriter:
         # for item in self.templateList:
         #     print(item)
         #     print("BREAK")
-#        print(self.templateList)
+        print(self.templateList)
         templateFile.close()
 
     def CyclicSearchReplace(self): #http://stackoverflow.com/questions/39086/search-and-replace-a-line-in-a-file-in-python
