@@ -40,7 +40,7 @@ class SVGTemplateWriter:
             addresssublist=[]
             for i in range((self.templateListSlots)):
                 addresssublist.append(self.addressList.pop())
-            print(addresssublist) 
+            #print(addresssublist) 
             #self.OutputTemplateFile(temp)
             fileoutput=self.MergeListsForOutput(addresssublist)
             self.SaveToFile(fileoutput,addresssublist)
@@ -58,7 +58,7 @@ class SVGTemplateWriter:
             output[counter]=self.TranslateSpecialCharacters(item)
             counter+=2
         output_=''
-        print(*output)
+        #print(*output)
         #this seems incredibly inefficient but I can't seem to find an easier way. I feel like there must be but can't figure it out.
         for item in output:
             output_+=item
@@ -76,7 +76,7 @@ class SVGTemplateWriter:
     def SaveToFile(self,output,addresssublist): #output is the file contents we will write to file
         filename=self.CreateFileName(addresssublist)
         print("writing to %s" % filename)
-        print(output)
+        #print(output)
         f=open(filename,'w')
         f.write(str(output))
         f.close()
