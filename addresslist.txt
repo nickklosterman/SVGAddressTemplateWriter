@@ -1,8 +1,9 @@
 #Frohe Festtage! http://german.about.com/library/blkarte_chelp.htm
-Ms. Anna Souchuk;2032 N. Point St.;Chicago, IL 60647
+ Ms. Anna Souchuk;2032 N. Point St.;Chicago, IL 60647
+#Greg,Karen,Claire,Benjamin
 The Kojak Family;2S081 Ivy Lane;Lombard, IL 60148
-Mr. Justin Storbeck;10220 67Th Dr. Apt 307;Forest Hills, NY 11375
-Ms. Amanda Orfei;906 Ridge Sq, Unit 307;Elk Grove Village, IL 60007
+ Mr. Justin Storbeck;10220 67Th Dr. Apt 307;Forest Hills, NY 11375
+ Ms. Amanda Orfei;906 Ridge Sq, Unit 307;Elk Grove Village, IL 60007
 
 Mr. Cameron Holman;P.O. Box 72453;Fort Bragg, NC 28310
 Holliday & Weber;Lutz; West Lafayette, IN 47906
@@ -15,9 +16,9 @@ Mr. Blake Williams and Ms. Alexandra Cosgrove;2035 N. Talbott Street; Indianapol
 Mr. & Mrs. Brush;70 Cutter Hill Rd; Arlington, MA 02474
 Ms. Destiny Baccino; Somewher; SNHU, NH
 Mr. Carson Budde; 704 35th St.; Manhattan Beach, CA 90266
-Mr. & Mrs. Zwink; Paragon; Ft. Dodge, IA 
+Mr. & Mrs. Zwink; 1584 Paragon Ave; Ft. Dodge, IA 50501 
 
-The Klosterman Family;6920 Sturgeon; Ben Avon, PA 
+The Klosterman Family;6920 Sturgeon; Ben Avon, PA 15202
 The Klosterman Family;SomePlace; Katy, TX
 The Klosterman Family;3082 Dayton-Xenia Rd.;Beavercreek, OH 45434
 The Carone Family; 4612 Rean Meadow; Dayton, OH
@@ -26,15 +27,23 @@ The Carone Family;  Sexton Rd.;  Modesto, CA
 
 #this is a comment, would need to run separately if do add'l line for addresses with apt number.
 Dr. Theolyn Price;3621 Ethan Lane; Orlando, FL 32814
+#Eric,Anna,Lisl
 The Reeve Family;1420 Berkman Court; Rochester, MN 55901
-Mr. Justin Roesner;4413 W. Valhalla Blvd, Apt 11;Sioux Falls, SD 57106
+#Justin & Jessica
+ Mr. Justin Roesner;4413 W. Valhalla Blvd, Apt 11;Sioux Falls, SD 57106
 Mr. & Mrs. Peterson; Somewhere; Mantorville, MN 55
+#Dirk,Kris,Joe,Jason,Dan
 The Bierbaum Family; 1012 Golfer's Ct SE; Rochester, MN 55904
 Dr. M. Lewin; 4330 Northcrest Rd.; Dallas, TX 75229
 CBC; 649 East 9th St; Indianapolis, IN 46202
 
-Mr. Mike Buol; 1119 Highridge Ave.; Dayton, OH 45420
+ #Cassie
+ Mr. Mike Buol; 1119 Highridge Ave.; Dayton, OH 45420
+#Ryan,Carrie,Sam,Matt
 Crouse-Quigley Family;290 Blandford Dr.; Worthington, OH 43085
+
 The Budde Family; 404 Brydon; Dayton, OH 45419
+#Matt,Amanda,Marian
 Matt Johnson Family; 4028 N. Sheridan Rd. #A2; Chicago, IL 60613
+#Adam,Molly,Meryl??
 Selsby Family; Kenmore; Chicago, IL 606
